@@ -5,7 +5,7 @@ console.log('Hello world!');
 const { request, response } = require('express'); // eslint-disable-line
 // In servers, packages are imported with the following signature
 const express = require('express');
-const req = require('express/lib/request');
+const req = require('express/lib/request'); // eslint-disable-line
 
 // This is how you "activate" express once imported
 const app = express();
@@ -47,5 +47,7 @@ app.get('/pet', (request, response) => {
 app.get('*', (request, response) => {
   response.send('Page not found');
 });
+
+// insert parsing class here I guess
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
