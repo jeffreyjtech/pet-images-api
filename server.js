@@ -1,6 +1,6 @@
 'use strict';
 
-console.log("Hello world!");
+console.log('Hello world!');
 
 const { request, response } = require('express'); // eslint-disable-line
 // In servers, packages are imported with the following signature
