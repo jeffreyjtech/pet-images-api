@@ -39,7 +39,7 @@ app.get('/pet', (request, response) => {
   let species = request.query.species;
 
   let pet = petData.find(pet => pet.species === species);
-  response.send(`You found him! ${pet.name} the ${pet.species}!`,);
+  response.send({pet});
 });
 
 // Asterisk is a wildcard character for the first parameter
