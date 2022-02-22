@@ -2,7 +2,7 @@
 
 console.log("Hello world!");
 
-const { request, response } = require('express');
+const { request, response } = require('express'); // eslint-disable-line
 // In servers, packages are imported with the following signature
 const express = require('express');
 const req = require('express/lib/request');
@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3002;
 const petData = require('./data/pets.json');
 
 // Creating basic default route
-// a basic URL with domainname/ will get this response
+// a basic URL "mydomain.scam/" will be routed to this this response
 app.get('/', (request, response) => {
   // Response.send inserts it's argument into <body>
   // This method call is needed to keep the page from hanging
@@ -30,7 +30,7 @@ app.get('/sayHello', (request, response) => {
   response.send(`Hi ${name}`);
 });
 
-// If the user types in "%%domain%%/banana", they'll see this
+// If the user types in "mydomain.scam/banana", they'll see this
 app.get('/banana', (request, response) =>{
   response.send('delicious banana');
 });
