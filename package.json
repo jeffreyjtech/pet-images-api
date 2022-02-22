@@ -2,5 +2,23 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "pet-images-api",
+  "description": "Pet image API?",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyjtech/pet-images-api.git"
+  },
+  "author": "Jeffrey Jenkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreyjtech/pet-images-api/issues"
+  },
+  "homepage": "https://github.com/jeffreyjtech/pet-images-api#readme"
 }
